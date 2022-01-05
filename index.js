@@ -19,6 +19,8 @@ class Polygon {
 
 class Triangle extends Polygon {
     get isValid() {
+        // let sides = this.countSides();
+        // console.log(sides)
         if (this.array[0] + this.array[1] > this.array[2]) && (this.array[1] + this.array[2] > this.array[0]) && (this.array[0] + this.array[2] > this.array[1])
         // the sum of the lengths of any two sides of a triangle is > than the length of the third side
         // if that is not true, then it is not a triangle
